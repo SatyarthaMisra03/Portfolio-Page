@@ -24,3 +24,4 @@ I created this website to introduce myself, share my educational background, sho
 I'm still learning, exploring new things, and improving my skills. This portfolio is a small reflection of my journey so far.
 
 Thanks for visiting!
+ 
