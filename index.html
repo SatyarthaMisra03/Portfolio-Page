@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Satyartha Misra, an aspiring software developer studying B.Tech CSE (DS+AI) in Lucknow." />
+  <title>Satyartha Misra — Aspiring Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- intro loader, progress bar, cursor follower -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <span>SM<em>.</em></span>
+    <div class="loader-bar"><i id="loaderBar"></i></div>
+    <small id="loaderPct">0%</small>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav-logo">S. Misra</a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="resume.pdf" download class="nav-cta">Resume ↓</a>
+    <button class="nav-menu" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  </header>
+
+  <main>
+
+    <!-- ============ 01 · HOME ============ -->
+    <section class="panel hero" id="home">
+      <div class="hero-meta label">
+        <span id="greeting">(Portfolio — 2026)</span>
+        <span>Lucknow, IN · <b id="clock">--:--</b></span>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 class="split-text">Satyartha <em>Misra</em></h1>
+          <p class="hero-role reveal">Aspiring Software Developer</p>
+          <p class="hero-now reveal"><span class="label">Currently into —</span> <span class="rotator" id="rotator">Python</span></p>
+          <p class="hero-intro reveal">
+            Second-year B.Tech student who gets weirdly excited about gadgets, clean code
+            and the question <i>“wait, how does this actually work?”</i> I take things apart
+            (mostly in code), learn what's inside, and try to build something useful from it.
+          </p>
+          <div class="btn-row reveal">
+            <a href="resume.pdf" download class="btn btn-ink">Download Resume ↓</a>
+            <a href="#contact" class="btn btn-line">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <div class="disc"></div>
+          <div class="id-card">
+            <span class="label">Student ID — 02</span>
+            <strong>SM</strong>
+            <div class="id-lines">
+              <span>Satyartha Misra</span>
+              <span>B.Tech CSE (DS+AI)</span>
+              <span>2nd Year · SRMU</span>
+            </div>
+          </div>
+          <svg class="badge" viewBox="0 0 200 200">
+            <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" /></defs>
+            <text><textPath href="#circ" textLength="440" lengthAdjust="spacing">stay curious ✺ remain grounded ✺ keep evolving ✺ </textPath></text>
+          </svg>
+          <span class="badge-star">✺</span>
+        </div>
+      </div>
+
+      <!-- Social links: edit each href, duplicate or delete a line to add or remove a platform -->
+      <div class="socials">
+        <span class="label">Find me on</span>
+        <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener">LinkedIn <i>↗</i></a>
+        <a href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub <i>↗</i></a>
+        <a href="https://x.com/your-handle" target="_blank" rel="noopener">X <i>↗</i></a>
+        <a href="https://instagram.com/your-handle" target="_blank" rel="noopener">Instagram <i>↗</i></a>
+      </div>
+    </section>
+
+    <!-- marquee -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip-track">
+        <span>Stay curious ✺ Remain grounded ✺ Keep evolving ✺ Stay curious ✺ Remain grounded ✺ Keep evolving ✺ </span>
+        <span>Stay curious ✺ Remain grounded ✺ Keep evolving ✺ Stay curious ✺ Remain grounded ✺ Keep evolving ✺ </span>
+      </div>
+    </div>
+
+    <!-- ============ 02 · ABOUT ============ -->
+    <section class="panel about" id="about">
+      <div class="split">
+        <div class="split-head reveal">
+          <span class="label">(02) About me</span>
+          <h2>A little <em>about</em> me</h2>
+          <p class="lead">
+            I'm Satyartha, a student from Lucknow who learns best by poking at things until they make sense.
+          </p>
+        </div>
+
+        <div class="rows reveal">
+          <div class="row">
+            <span class="label">Background</span>
+            <p>Pursuing B.Tech in Computer Science &amp; Engineering, specialising in Data Science and AI,
+               at Shri Ramswaroop Memorial University, Lucknow. Currently in my second year.</p>
+          </div>
+          <div class="row">
+            <span class="label">Interests</span>
+            <p>Programming, web development, data and AI, and anything with circuits, screens or clever
+               engineering hiding inside it.</p>
+          </div>
+          <div class="row">
+            <span class="label">Why tech</span>
+            <p>Plain curiosity. I've always been pulled towards geeky objects, and eventually I wanted to
+               know what made them tick. That led me to code.</p>
+          </div>
+          <div class="row">
+            <span class="label">Aiming for</span>
+            <p>A career as a software developer who builds dependable, useful things, backed by solid
+               fundamentals in data structures, databases and AI.</p>
+          </div>
+        </div>
+      </div>
+
+      <blockquote class="motto reveal">
+        <span class="label">My philosophy</span>
+        <p>Stay curious. Remain grounded. <em>Keep evolving.</em></p>
+      </blockquote>
+    </section>
+
+    <!-- ============ 03 · EDUCATION ============ -->
+    <section class="panel education" id="education">
+      <div class="split">
+        <div class="split-head reveal">
+          <span class="label">(03) Education</span>
+          <h2>Where I'm <em>learning</em></h2>
+          <p class="lead">The classroom side of the story, so far.</p>
+        </div>
+
+        <div class="rows reveal">
+          <div class="row">
+            <span class="label">University</span>
+            <p>Shri Ramswaroop Memorial University, Lucknow</p>
+          </div>
+          <div class="row">
+            <span class="label">Degree</span>
+            <p>B.Tech in Computer Science &amp; Engineering, specialisation in Data Science + AI</p>
+          </div>
+          <div class="row">
+            <span class="label">Year</span>
+            <p>2nd year (ongoing)</p>
+          </div>
+          <div class="row">
+            <span class="label">Before this</span>
+            <p><mark class="todo">Add Class XII: school, board, year, %</mark><br />
+               <mark class="todo">Add Class X: school, board, year, %</mark></p>
+          </div>
+          <div class="row">
+            <span class="label">Achievements</span>
+            <p><mark class="todo">Add scholarships, ranks, certificates, hackathons</mark></p>
+          </div>
+          <div class="row">
+            <span class="label">Coursework</span>
+            <p>Data Structures &amp; Algorithms, Database Management Systems, Operating Systems,
+               Programming in C, Python, Discrete Mathematics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 · SKILLS ============ -->
+    <section class="panel skills" id="skills">
+      <div class="skills-head reveal">
+        <span class="label">(04) Technical skills</span>
+        <h2>What's in my <em>toolkit</em></h2>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill reveal">
+          <div class="skill-icon">{ }</div>
+          <h3>Programming</h3>
+          <p>C<br />Python</p>
+        </article>
+        <article class="skill reveal">
+          <div class="skill-icon">&lt;/&gt;</div>
+          <h3>Web development</h3>
+          <p>HTML<br />CSS<br />JavaScript</p>
+        </article>
+        <article class="skill reveal">
+          <div class="skill-icon">DB</div>
+          <h3>Database</h3>
+          <p>MySQL<br />MongoDB</p>
+        </article>
+        <article class="skill reveal">
+          <div class="skill-icon">git</div>
+          <h3>Tools</h3>
+          <p>Git<br />GitHub<br />VS Code</p>
+        </article>
+        <article class="skill reveal">
+          <div class="skill-icon">∑</div>
+          <h3>Core CS</h3>
+          <p>DSA<br />DBMS<br />Operating Systems</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 05 · CONTACT ============ -->
+    <section class="panel contact" id="contact">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="label">(05) Contact</span>
+          <h2>Say <em>hello</em></h2>
+          <p class="lead">Got an opportunity, an idea or just a question? My inbox is open.</p>
+
+          <ul class="contact-list">
+            <li><span class="label">Email</span><span><a href="mailto:misrasatyartha3@gmail.com">misrasatyartha3@gmail.com</a><button type="button" class="copy" id="copyEmail">Copy</button></span></li>
+            <li><span class="label">Location</span><span>Lucknow, Uttar Pradesh</span></li>
+            <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener">/in/your-linkedin-id ↗</a></li>
+            <li><span class="label">GitHub</span><a href="https://github.com/your-github-username" target="_blank" rel="noopener">/your-github-username ↗</a></li>
+            <li><span class="label">Resume</span><a href="resume.pdf" download>Download PDF ↓</a></li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required />
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <p class="form-status" id="formStatus" role="status"></p>
+          <button type="submit" class="btn btn-lime">Send message →</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Satyartha Misra</span>
+    <span>Handmade with HTML, CSS &amp; JavaScript</span>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
